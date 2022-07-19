@@ -30,10 +30,6 @@ body {
   border-bottom: 2px solid black;
   margin:0px 0px;
 }
-#navbar > div {
-  /* border: 2px solid red; */
-  /* height: auto; */
-}
 #input {
   width: 80%;
   padding: 12px 10px;
@@ -93,7 +89,6 @@ body {
 }
 /* discount bar  */
 #discount{
-    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,4 +99,9 @@ body {
     background-color: rgb(49, 49, 49);
     color: white;
 
+}
+#discount:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }

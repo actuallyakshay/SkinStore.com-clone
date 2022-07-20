@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* trending section  */
+.trend {
+  text-align: center;
+  font-weight: 400;
+  font-size: 37px;
+}
+#trending {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  text-align: center;
+}
+#trending > div {
+  width: 90%;
+  margin: auto;
+}
+#trending > div > img {
+  width: 100%;
+  border-radius: 50%;
+}
+#trending > div > h3 {
+  font-weight: 400;
+}
+#trending > div > p {
+  font-size: 14px;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  line-height: 21px;
+  margin-top: -10px;
+  text-align: center;
+}
+#trending > div > button {
+  padding: 15px 10px;
+  border-radius: 0px;
+  margin-top: 20px;
+  background-color: white;
+  font-weight: 100;
+  border: 1px solid black;
+}
+#trending > div > button:hover {
+  cursor: pointer;
+  background-color: rgb(234, 255, 255);
+}
+
+/* category  row  */
+
+#category {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#category > div > img {
+  width: 100%;
+  opacity: .7;
+}
+#category > div > img:hover{
+  cursor: pointer;
+  opacity: 1;
+
+}

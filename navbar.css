@@ -67,6 +67,7 @@ body {
     background-color: rgb(43, 42, 42);
     color: white;
   cursor: pointer;
+  transition: .4s;
 }
 #publicity{
     display: flex;
@@ -83,6 +84,7 @@ body {
     padding: 10px 0px;
     box-sizing: border-box;
     cursor: pointer;
+    /* transition: .2s; */
 }
 .pub>div>img{
     width: 30px;
@@ -104,4 +106,6 @@ body {
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: .4s;
+
 }

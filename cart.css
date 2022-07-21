@@ -48,10 +48,13 @@ body {
 }
 #items>div{
     /* border: 2px solid red; */
+    /* text-align: center; */
 }
 #items > div > img {
-  width: 100%;
+  width: 75%;
   cursor: pointer;
+  /* text-align: center; */
+  margin-left: 30px;
 }
 #items > div > h3 {
   font-size: 16px;

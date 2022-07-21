@@ -4,6 +4,7 @@ let slider_arr = [
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/04/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot2-1180x450-021804.png",
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/16/0701-STDCRE-38244-SS-BME-Skinstore-July-4-Assets-Shot_01-1180x450-095516.jpg",
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/38/1180x450-082838.jpg",
+  "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/55/0712_THG0034801_SS_JUL_22_SHOT_03_1180x450-061455.jpg"
 ];
 
 let leftBtn = document.querySelector("#left-btn");
@@ -78,6 +79,10 @@ function trendfunc(trend_arr) {
     let para = document.createElement("p");
     para.innerText = elem.para;
     let btn = document.createElement("button");
+    btn.addEventListener("click", function () {
+      event.preventDefault();
+      window.location.href = "cart.html"
+  })
     btn.innerText = "SHOP NOW";
     box.append(image, head, para, btn);
     document.querySelector("#trending").append(box);
@@ -119,6 +124,10 @@ function catefunc(cat_arr) {
     let box = document.createElement("div");
     let image = document.createElement("img");
     image.setAttribute("src", elem.image);
+    image.addEventListener("click", function () {
+      event.preventDefault();
+      window.location.href = "cart.html"
+  })
     box.append(image);
     document.querySelector("#category").append(box);
   });
@@ -165,6 +174,10 @@ function buyingfunc(buying_arr) {
     para.innerText = elem.price;
     let btn = document.createElement("button");
     btn.innerText = "SHOP NOW";
+    btn.addEventListener("click", function () {
+      event.preventDefault();
+      window.location.href = "cart.html"
+  })
     box.append(image, head, para, btn);
     document.querySelector("#buying").append(box);
   });

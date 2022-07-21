@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Quick_buy_cart</title>
     <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./header.css">
+    <!-- <link rel="stylesheet" href="./cart.css"> -->
     <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./quick_buy.css">
+    <link rel="stylesheet" href="./header.css">
 </head>
 
 <body>
@@ -76,60 +78,51 @@
     <div id="discount">
         15% off with code SS15 + 16-Piece Beauty Bag(Worth$106)@%150 | Shop now >
     </div>
-    <!-- slider  -->
-    <div id="slider">
-        <img id="crauser"
-            src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/04/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot2-1180x450-021804.png"
-            alt="">
-        <button id="left-btn"> < </button>
-                <button id="right-btn"> > </button>
-                <div id="cart_functionality">
-                    <h1>SUMMER SKIN</h1>
-                    <p>SOLUTIONS</p>
-                    <p>Save 15% on most products when you use code $S15 at the cart on</p>
-                    <p>SkinStore.</p>
-                    <p>Plus, recieve a free 12-Piece Beauty Bag(Worth $104) when you spend</p>
-                    <p>$150 or more on your purchase</p>
-                    <div id="shop_now">
-                        SHOP NOW
-                    </div>
-                </div>
+
+    <!-- quick_buy html here -->
+    <!-- your cart line  -->
+    <div id="your_cart">
+        <div>Your Cart</div>
+        <div>
+            <img src="./images/lock.png" alt="">
+            <div>CHECKOUT SECURELY NOW</div>
+        </div>
     </div>
-    <div id="dott">
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- 2nd part  -->
+    <div class="mid_part">
+        <img src="https://img.icons8.com/ios-glyphs/2x/appointment-reminders--v2.gif" alt="">
+        <h4> Spend another $118.00 and receive a FREE 16-Piece Beauty Bag (worth $106)</h4>
+    </div>
+    <div class="mid_part">
+        <img src="https://img.icons8.com/ios-glyphs/2x/appointment-reminders--v2.gif" alt="">
+        <h4>Grab a trending Elemis Pro-Collagen Cleansing Balm 50ml! <span>Add To Cart</span></h4>
+    </div>
+    <div class="mid_part">
+        <img src="https://img.icons8.com/ios-glyphs/2x/appointment-reminders--v2.gif" alt="">
+        <h4>Spend another $17.00 and receive FREE US tracked delivery!</h4>
     </div>
 
-    <!-- tranding nowp page  -->
-    <h1 class="trend">Trending Offers</h1>
-    <div id="trending">
+    <!-- 3rd part -->
 
+    <div id="sec_part">
+        <div>Items <span></span></div>
+        <div>Price <span></span></div>
+        <div>Quantity <span></span></div>
+        <div>Subtotal <span></span></div>
     </div>
 
-    <!-- shop by catagory  -->
-    <h1 class="trend">Shop By Catagory</h1>
-    <div id="category">
+    <div id="cart_items">
+        <!-- js  -->
     </div>
 
-    <!-- people buying rn  -->
-    <h2 class="trend"> What People Are Buying Right Now</h2>
-    <div id="buying">
-        <!-- js         -->
+    <!-- subtotal  -->
+
+<div id="subtotal_part">
+        <div>Cart Subtotal:- <span id="span_total"></span></div>
     </div>
 
-    <!-- brand image sections  -->
-    <div id="brand">
-        <!-- js part  -->
-    </div>
-    <h2 class="trend">Trending Now</h2>
 
-    <!-- one section remaining  -->
-    <h2 class="trend">Over On the Blog...</h2>
-    <div id="blog">
-        <!-- js part  -->
-    </div>
-    <hr>
+
     <!-- footer  -->
     <div id="footer">
         <div class="cls">
@@ -182,28 +175,21 @@
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
-
 <script src="./navbar.js"></script>
-<script src="./header.js"></script>
+<!-- <script src="./cart.js"></script> -->
 <script src="./footer.js"></script>
+<script src="./quick_buy.js"></script>
+
 <script>
     document.querySelector("#account").addEventListener("click", function () {
         event.preventDefault();
         window.location.href = "signin.html"
     });
-    document.querySelector("#cart").addEventListener("click", function () {
+    document.querySelector("#logo").addEventListener("click", function () {
         event.preventDefault();
-        window.location.href = "quick_buy.html"
+        window.location.href = "index.html"
     })
-    document.querySelector("#shop_now").addEventListener("click", function () {
-        event.preventDefault();
-        window.location.href = "cart.html"
-    })
-   
 </script>

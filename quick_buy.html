@@ -85,7 +85,7 @@
         <div>Your Cart</div>
         <div>
             <img src="./images/lock.png" alt="">
-            <div>CHECKOUT SECURELY NOW</div>
+            <div id="checkout">CHECKOUT SECURELY NOW</div>
         </div>
     </div>
     <!-- 2nd part  -->
@@ -106,9 +106,9 @@
 
     <div id="sec_part">
         <div>Items <span></span></div>
-        <div>Price <span></span></div>
-        <div>Quantity <span></span></div>
-        <div>Subtotal <span></span></div>
+        <div style="margin-left: -35px;">Price <span></span></div>
+        <!-- <div>Quantity <span></span></div> -->
+        <div style="margin-left: -25px;">Subtotal <span></span></div>
     </div>
 
     <div id="cart_items">
@@ -130,7 +130,7 @@
                 <p>
                     Sign up to our email list and receive 20% off your next order
                 </p>
-                <button style="width:100px ;">SIGN UP</button>
+                <button id="last_up" style="width:100px ;">SIGN UP</button>
             </div>
             <div>
                 <p>Connect with us</p>
@@ -191,5 +191,13 @@
     document.querySelector("#logo").addEventListener("click", function () {
         event.preventDefault();
         window.location.href = "index.html"
+    })
+    document.querySelector("#last_up").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "signin.html"
+    })
+    document.querySelector("#checkout").addEventListener("click", function(){
+        event.preventDefault();
+        window.location.href="payment.html"
     })
 </script>

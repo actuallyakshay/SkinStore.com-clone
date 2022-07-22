@@ -30,7 +30,9 @@ body {
   text-align: center;
   border-bottom: 2px solid black;
   margin:0px 0px;
-  position: sticky;
+  /* position: sticky; */
+  /* position: fixed; */
+  background-color: white;
   
 }
 #input {
@@ -50,9 +52,16 @@ body {
   align-items: center;
   font-size: 15px;
   gap: 10px;
+  width: fit-content;
+  padding: 8px 12px;
 }
 #account img , #cart img{
   width: 30px;
+}
+#account:hover , #cart:hover{
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  
 }
 #logo img{
    width: 75%;
@@ -62,6 +71,8 @@ body {
     display: flex;
     width: fit-content;
     margin: auto;
+    /* position: fixed; */
+    background-color: white;
 }
 #item>div{
     padding: 10px 22px;

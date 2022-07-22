@@ -46,7 +46,7 @@ body {
   row-gap: 40px;
   margin-top: 25px;
 }
-#items > div > img, {
+#items > div > img {
   width: 75%;
   cursor: pointer;
   /* text-align: center; */

@@ -12,37 +12,40 @@
 </head>
 
 <body>
-    <div id="upperbox">
-        <img src="./images/us.png" alt="">
-        <div>
-            <p>us- USD</p>
-            <p>Help</p>
-        </div>
-    </div>
-    <div id="navbar">
-        <div id="logo">
-            <img src="./images/logo.png" alt="">
-        </div>
-        <div>
-            <input type="text" id="input" placeholder="Start for a product or brand...">
-        </div>
-        <div id="account">
+    <div id="nav">
+        <div id="upperbox">
+            <img src="./images/us.png" alt="">
             <div>
-                <img src="./images/account.png" alt="">
+                <p>us- USD</p>
+                <p>Help</p>
             </div>
-            <div>Account</div>
         </div>
-        <div id="cart">
+        <div id="navbar">
+            <div id="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
             <div>
-                <img src="./images/cart.png" alt="">
+                <input type="text" id="input" placeholder="Start for a product or brand...">
             </div>
-            <div>Cart</div>
+            <div id="account">
+                <div>
+                    <img src="./images/account.png" alt="">
+                </div>
+                <div>Account</div>
+            </div>
+            <div id="cart">
+                <div>
+                    <img src="./images/cart.png" alt="">
+                </div>
+                <div>Cart</div>
+            </div>
+        </div>
+        <!-- item box -->
+        <div id="item">
+    
         </div>
     </div>
-    <!-- item box -->
-    <div id="item">
-
-    </div>
+    
     <!-- shippiong ites  -->
     <div id="publicity">
         <div class="pub">
@@ -136,7 +139,7 @@
                 <p>
                     Sign up to our email list and receive 20% off your next order
                 </p>
-                <button>SIGN UP</button>
+                <button id="last_up">SIGN UP</button>
             </div>
             <div>
                 <p>Connect with us</p>
@@ -204,6 +207,10 @@
     document.querySelector("#shop_now").addEventListener("click", function () {
         event.preventDefault();
         window.location.href = "cart.html"
+    })
+    document.querySelector("#last_up").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "signin.html"
     })
 
 </script>

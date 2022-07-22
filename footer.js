@@ -1,3 +1,44 @@
+// connect folder
+
+let connect_arr = [
+  {
+    image: "https://img.icons8.com/cute-clipart/2x/facebook-new.png",
+    link:"https://www.facebook.com/SkinStore"
+  },
+  {
+    image: "https://img.icons8.com/dusk/2x/instagram-new--v2.gif",
+    link:"https://www.instagram.com/skinstore/"
+  },
+  {
+    image: "https://img.icons8.com/color/2x/twitter--v2.gif",
+    link:"https://twitter.com/skinstore_cs"
+  },
+  {
+    image: "https://img.icons8.com/color/2x/pinterest--v3.gif",
+    link:"https://www.pinterest.com/skinstore/"
+  },
+  {
+    image: "https://img.icons8.com/color/2x/snapchat-circled-logo--v2.gif",
+    link:"https://www.snapchat.com/add/SkinStoreUS"
+  },
+];
+
+connectfunc(connect_arr);
+function connectfunc(connect_arr) {
+  connect_arr.forEach((elem, index) => {
+    let box = document.createElement("div");
+    let image = document.createElement("img");
+    image.setAttribute("src", elem.image);
+    image.style.cursor="pointer";
+    image.addEventListener("click", function(){
+      event.preventDefault();
+      window.location.href=elem.link;
+    })
+    box.append(image);
+    document.querySelector("#connect").append(box);
+  });
+}
+
 let help_arr = [
   {
     image: "https://img.icons8.com/ios/2x/service.png",

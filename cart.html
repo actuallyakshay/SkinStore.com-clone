@@ -113,7 +113,7 @@
                 <p>
                     Sign up to our email list and receive 20% off your next order
                 </p>
-                <button style="width:100px ;">SIGN UP</button>
+                <button id="last_up" style="width:100px ;">SIGN UP</button>
             </div>
             <div>
                 <p>Connect with us</p>
@@ -177,5 +177,9 @@
     document.querySelector("#logo").addEventListener("click", function () {
         event.preventDefault();
         window.location.href = "index.html"
+    })
+    document.querySelector("#last_up").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "signin.html"
     })
 </script>

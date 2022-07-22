@@ -1,4 +1,9 @@
 /* <!-- your cart line  --> */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+
 
 #your_cart {
   display: flex;
@@ -64,26 +69,25 @@
 #sec_part,#subtotal_part {
   /* border: 2px solid black; */
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr;
   border-top: 1px solid rgb(231, 229, 229);
   border-bottom: 1px solid rgb(221, 221, 221);
   padding: 10px 0px;
   font-size: 14px;
-  /* gap: -5px; */
   width: 95%;
   margin: auto;
 }
 #subtotal_part{
   border-top: 0px;
-  margin-top: -5px;
+  /* margin-top: -5px; */
 }
 #subtotal_part>div{
    display: flex;
    gap: 20px;
    justify-content: end;
-   border: 2px solid black;
+   /* border: 2px solid black; */
   width: 100%;
-  margin-left: 430px;
+  /* margin-left: -100px; */
 }
 
 /* cart_items  */
@@ -98,7 +102,7 @@
 
 #cart_items > div {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
   /* gap: 0px; */
   /* border: 2px solid red; */
   margin-bottom: 50px;

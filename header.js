@@ -63,7 +63,7 @@ let trend_arr = [
   {
     image:
       "https://static.thcdn.com/images/small/webp/widgets/121-us/26/SkinMedica.products-092426.jpg",
-    haed: "10% off SkinMedica + extra 20% off with Auto Replenishment",
+    head: "10% off SkinMedica + extra 20% off with Auto Replenishment",
     para: "Receive a Free SkinMedica Instant Bright Eye Cream .07oz (worth $14) when you spend $130 or more on the brand. Plus, receive an EXTRA 20% off when you subscribe to your favorite SkinMedica products.",
   },
 ];
@@ -258,36 +258,5 @@ function blogfunc(blog_arr) {
     btn.innerText = "READ MORE";
     box.append(image, head, para, btn);
     document.querySelector("#blog").append(box);
-  });
-}
-
-// connect folder
-
-let connect_arr = [
-  {
-    image: "https://img.icons8.com/cute-clipart/2x/facebook-new.png",
-  },
-  {
-    image: "https://img.icons8.com/dusk/2x/instagram-new--v2.gif",
-  },
-  {
-    image: "https://img.icons8.com/color/2x/twitter--v2.gif",
-  },
-  {
-    image: "https://img.icons8.com/color/2x/pinterest--v3.gif",
-  },
-  {
-    image: "https://img.icons8.com/color/2x/snapchat-circled-logo--v2.gif",
-  },
-];
-
-connectfunc(connect_arr);
-function connectfunc(connect_arr) {
-  connect_arr.forEach((elem, index) => {
-    let box = document.createElement("div");
-    let image = document.createElement("img");
-    image.setAttribute("src", elem.image);
-    box.append(image);
-    document.querySelector("#connect").append(box);
   });
 }

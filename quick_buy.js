@@ -11,8 +11,8 @@ function display_cart_items(added_cart_items) {
     head.innerText = elem.head;
     let para = document.createElement("p");
     para.innerText = elem.price;
-    let quantity = document.createElement("p");
-    quantity.innerText = "0";
+    // let quantity = document.createElement("p");
+    // quantity.innerText = "0";
     let total = document.createElement("h4");
     total.innerText = elem.price;
     let del = document.createElement("div");
@@ -24,7 +24,7 @@ function display_cart_items(added_cart_items) {
     line.setAttribute("width", "100%");
     line.style.color = "grey";
     box1.append(image, head);
-    box.append(box1, para, quantity, total, del);
+    box.append(box1, para, total, del);
     document.querySelector("#cart_items").append(box, line);
   });
 }

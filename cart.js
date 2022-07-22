@@ -324,11 +324,11 @@ function selectfucn(event) {
     itemfunc(cart_arr);
     return;
   }
-  if (select_data == "high") {
+  if (select_data == "low") {
     cart_arr.sort((a, b) => a.price - b.price);
     itemfunc(cart_arr);
   }
-  if (select_data == "low") {
+  if (select_data == "high") {
     cart_arr.sort((a, b) => b.price - a.price)
     itemfunc(cart_arr);
   }

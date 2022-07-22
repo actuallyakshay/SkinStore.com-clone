@@ -10,11 +10,11 @@ function formfunc(event) {
   let password = document.querySelector("#password").value;
   let confirm_password = document.querySelector("#confirm_password").value;
   let number = document.querySelector("#number").value;
-  if(password!== confirm_password){
+  if (password !== confirm_password) {
     alert("password doesn't match to your entered password");
     return;
   }
-  if(email!== confirm_email){
+  if (email !== confirm_email) {
     alert("password doesn't match to your entered password");
     return;
   }
@@ -26,6 +26,7 @@ function formfunc(event) {
     confirm_password: confirm_password,
     number: number,
   };
+  console.log(obj);
   signup_data_arr.push(obj);
   localStorage.setItem("signup_data", JSON.stringify(signup_data_arr));
   name= "";

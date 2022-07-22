@@ -280,6 +280,7 @@ let connect_arr = [
     image: "https://img.icons8.com/color/2x/snapchat-circled-logo--v2.gif",
   },
 ];
+
 connectfunc(connect_arr);
 function connectfunc(connect_arr) {
   connect_arr.forEach((elem, index) => {

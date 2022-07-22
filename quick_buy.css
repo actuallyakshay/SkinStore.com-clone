@@ -4,7 +4,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-
 #your_cart {
   display: flex;
   justify-content: space-between;
@@ -66,7 +65,8 @@ body {
 
 /* 2nd part */
 
-#sec_part,#subtotal_part {
+#sec_part,
+#subtotal_part {
   /* border: 2px solid black; */
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
@@ -77,17 +77,14 @@ body {
   width: 95%;
   margin: auto;
 }
-#subtotal_part{
+#subtotal_part {
   border-top: 0px;
-  /* margin-top: -5px; */
 }
-#subtotal_part>div{
-   display: flex;
-   gap: 20px;
-   justify-content: end;
-   /* border: 2px solid black; */
+#subtotal_part > div {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
   width: 100%;
-  /* margin-left: -100px; */
 }
 
 /* cart_items  */
@@ -103,8 +100,6 @@ body {
 #cart_items > div {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 1fr;
-  /* gap: 0px; */
-  /* border: 2px solid red; */
   margin-bottom: 50px;
   text-align: center;
   align-items: center;
@@ -114,7 +109,6 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  /* border: 2px solid green; */
   width: fit-content;
 }
 #cart_items > div > div > img {
@@ -152,15 +146,25 @@ body {
   border-radius: 50%;
   background-color: rgb(237, 237, 237);
 }
-#cart_items > div > h4 + div:hover{
-    background-color: white;
-    cursor: pointer;
+#cart_items > div > h4 + div:hover {
+  background-color: white;
+  cursor: pointer;
 }
 #cart_items > hr {
   color: grey;
   opacity: 0.4;
 }
-.cls{
+.cls {
   border-top: 1px solid grey;
   margin-top: 30px;
+}
+
+.div {
+  margin-left: 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+#span_total {
+  margin-left: 20px;
 }

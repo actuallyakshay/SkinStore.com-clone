@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon"
-    href="https://urbanoasisgy.com/wp-content/uploads/2021/06/cropped-site-favicon-270x270.png" type="image/x-icon">
+        href="https://urbanoasisgy.com/wp-content/uploads/2021/06/cropped-site-favicon-270x270.png" type="image/x-icon">
     <title>Quick_buy</title>
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./footer.css">
@@ -86,7 +86,9 @@
         <div>Your Cart</div>
         <div>
             <img src="./images/lock.png" alt="">
+
             <div id="checkout">CHECKOUT SECURELY NOW</div>
+
         </div>
     </div>
     <!-- 2nd part  -->
@@ -118,8 +120,9 @@
 
     <!-- subtotal  -->
 
-<div id="subtotal_part">
-        <div>Cart Subtotal:- <span id="span_total"></span></div>
+    <div id="subtotal_part">
+        <div class="div">Subtotal Part (in $)</div>
+        <div id="span_total">0</div>
     </div>
 
 
@@ -180,25 +183,20 @@
 
 </html>
 <script src="./navbar.js"></script>
-<!-- <script src="./cart.js"></script> -->
 <script src="./footer.js"></script>
 <script src="./quick_buy.js"></script>
 
 <script>
     document.querySelector("#account").addEventListener("click", function () {
-        event.preventDefault();
         window.location.href = "signin.html"
     });
     document.querySelector("#logo").addEventListener("click", function () {
-        event.preventDefault();
         window.location.href = "index.html"
     })
     document.querySelector("#last_up").addEventListener("click", function () {
-        event.preventDefault();
         window.location.href = "signin.html"
     })
-    document.querySelector("#checkout").addEventListener("click", function(){
-        event.preventDefault();
-        window.location.href="payment.html"
+    document.querySelector("#checkout").addEventListener("click", function () {
+        window.location.href = "payment.html"
     })
 </script>

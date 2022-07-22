@@ -10,11 +10,11 @@ function formfunc(event) {
   let password = document.querySelector("#password").value;
   let confirm_password = document.querySelector("#confirm_password").value;
   let number = document.querySelector("#number").value;
-  if(password!== confirm_password){
+  if (password !== confirm_password) {
     alert("password doesn't match to your entered password");
     return;
   }
-  if(email!== confirm_email){
+  if (email !== confirm_email) {
     alert("password doesn't match to your entered password");
     return;
   }
@@ -26,30 +26,28 @@ function formfunc(event) {
     confirm_password: confirm_password,
     number: number,
   };
+  console.log(obj);
   signup_data_arr.push(obj);
   localStorage.setItem("signup_data", JSON.stringify(signup_data_arr));
-  name= "";
-  email= "";
-  confirm_email= "";
-  password= "";
-  confirm_password= "";
-  number= "";
+  name = "";
+  email = "";
+  confirm_email = "";
+  password = "";
+  confirm_password = "";
+  number = "";
+  window.location.href = "signin.html";
 }
 
-document.querySelector("#login").addEventListener("click", ()=>{
-    event.preventDefault();
-    window.location.href="signin.html"
-})
-
-document.querySelector("#facebook").addEventListener("click", ()=>{
-    event.preventDefault();
-    window.location.href="https://www.facebook.com/login/"
-})
-document.querySelector("#google").addEventListener("click", ()=>{
-    event.preventDefault();
-    window.location.href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp"
-})
-document.querySelector("#logo").addEventListener("click", ()=>{
-    event.preventDefault();
-    window.location.href="index.html"
-})
+document.querySelector("#facebook").addEventListener("click", () => {
+  event.preventDefault();
+  window.location.href = "https://www.facebook.com/login/";
+});
+document.querySelector("#google").addEventListener("click", () => {
+  event.preventDefault();
+  window.location.href =
+    "https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp";
+});
+document.querySelector("#logo").addEventListener("click", () => {
+  event.preventDefault();
+  window.location.href = "index.html";
+});

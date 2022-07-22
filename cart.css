@@ -46,22 +46,18 @@ body {
   row-gap: 40px;
   margin-top: 25px;
 }
-#items>div{
-    /* border: 2px solid red; */
-    /* text-align: center; */
-}
-#items > div > img {
+#items > div > img, {
   width: 75%;
   cursor: pointer;
   /* text-align: center; */
   margin-left: 30px;
 }
-#items > div > h3 {
+#items > div > h3{
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
 }
-#items > div > h3 + p {
+#items > div > h3 + p{
   border: 1px solid rgb(186, 4, 4);
   display: inline;
   font-size: 14px;
@@ -69,7 +65,7 @@ body {
   padding: 6px 4px;
   cursor: pointer;
 }
-#items > div > p + p {
+#items > div > p + p{
 font-size: 20px;
 font-weight: 600;
 cursor: pointer;
@@ -90,4 +86,8 @@ cursor: pointer;
     cursor: pointer;
     color: black;
     cursor: pointer;
+}
+.cls{
+  border-top: 1px solid grey;
+  margin-top: 30px;
 }

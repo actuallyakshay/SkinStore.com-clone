@@ -19,7 +19,6 @@ function singinfunc(event) {
   };
   signup_data_arr.forEach((elem, index) => {
     if (
-        // console.log("akshaylasjah")
         login_obj.email == elem.email &&
         login_obj.password == elem.password
     ) {

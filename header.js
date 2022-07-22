@@ -4,28 +4,28 @@ let slider_arr = [
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/04/0712-STDCRE-38046-SS-MH-Photography-July-22-REMAINING-BATCHING-Shot2-1180x450-021804.png",
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/16/0701-STDCRE-38244-SS-BME-Skinstore-July-4-Assets-Shot_01-1180x450-095516.jpg",
   "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/38/1180x450-082838.jpg",
-  "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/55/0712_THG0034801_SS_JUL_22_SHOT_03_1180x450-061455.jpg"
+  "https://static.thcdn.com/images/xlarge/webp/widgets/121-us/55/0712_THG0034801_SS_JUL_22_SHOT_03_1180x450-061455.jpg",
 ];
 
 let leftBtn = document.querySelector("#left-btn");
 let rightBtn = document.querySelector("#right-btn");
 let image = document.querySelector("#crauser");
-rightBtn.addEventListener("click", sliderfunc)
+rightBtn.addEventListener("click", sliderfunc);
 let i = 0;
-function sliderfunc(){
+function sliderfunc() {
   i++;
-  if(i===slider_arr.length){
-    i=0;
+  if (i === slider_arr.length) {
+    i = 0;
   }
   image.src = slider_arr[i];
 }
-setInterval(sliderfunc,2000)
-leftBtn.addEventListener("click", sliderfuncn)
-function sliderfuncn(){
-   i--;
-  if(i<0){
-        i=slider_arr.length-1;
-      }
+setInterval(sliderfunc, 2000);
+leftBtn.addEventListener("click", sliderfuncn);
+function sliderfuncn() {
+  i--;
+  if (i < 0) {
+    i = slider_arr.length - 1;
+  }
   image.src = slider_arr[i];
 }
 
@@ -81,8 +81,8 @@ function trendfunc(trend_arr) {
     let btn = document.createElement("button");
     btn.addEventListener("click", function () {
       event.preventDefault();
-      window.location.href = "cart.html"
-  })
+      window.location.href = "cart.html";
+    });
     btn.innerText = "SHOP NOW";
     box.append(image, head, para, btn);
     document.querySelector("#trending").append(box);
@@ -126,8 +126,8 @@ function catefunc(cat_arr) {
     image.setAttribute("src", elem.image);
     image.addEventListener("click", function () {
       event.preventDefault();
-      window.location.href = "cart.html"
-  })
+      window.location.href = "cart.html";
+    });
     box.append(image);
     document.querySelector("#category").append(box);
   });
@@ -176,8 +176,8 @@ function buyingfunc(buying_arr) {
     btn.innerText = "SHOP NOW";
     btn.addEventListener("click", function () {
       event.preventDefault();
-      window.location.href = "cart.html"
-  })
+      window.location.href = "cart.html";
+    });
     box.append(image, head, para, btn);
     document.querySelector("#buying").append(box);
   });

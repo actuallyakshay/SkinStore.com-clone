@@ -34,12 +34,13 @@ function formfunc(event) {
   password= "";
   confirm_password= "";
   number= "";
+  window.location.href="signin.html"
 }
 
-document.querySelector("#login").addEventListener("click", ()=>{
-    event.preventDefault();
-    window.location.href="signin.html"
-})
+// document.querySelector("#login").addEventListener("click", ()=>{
+//     event.preventDefault();
+    
+// })
 
 document.querySelector("#facebook").addEventListener("click", ()=>{
     event.preventDefault();

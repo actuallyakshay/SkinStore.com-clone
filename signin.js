@@ -10,7 +10,7 @@ function singinfunc(event) {
     alert("no user till now");
     return;
   }
-  let password = document.querySelector("#passowrd").value;
+  let password = document.querySelector("#password").value;
   let email = document.querySelector("#email").value;
 
   let login_obj = {
@@ -33,7 +33,7 @@ function singinfunc(event) {
 }
 document.querySelector("#register_main").addEventListener("click", ()=>{
     event.preventDefault();
-    window.location.href="login.html"
+    window.location.href="signup.html"
 })
 document.querySelector("#fb").addEventListener("click", ()=>{
   event.preventDefault();

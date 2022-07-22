@@ -366,6 +366,7 @@ function itemfunc(cart_arr) {
 
 function added_cart_func(elem, index) {
   added_cart.push(elem);
+  alert("Product added Successfully!")
   localStorage.setItem("added_cart_data", JSON.stringify(added_cart));
   itemfunc(cart_arr);
 }

@@ -329,31 +329,26 @@ function selectfucn(event) {
     itemfunc(cart_arr);
   }
   if (select_data == "high") {
-    cart_arr.sort((a, b) => b.price - a.price)
+    cart_arr.sort((a, b) => b.price - a.price);
     itemfunc(cart_arr);
   }
 }
 itemfunc(cart_arr);
-
 function itemfunc(cart_arr) {
-  
   document.querySelector("#items").innerHTML = "";
-  let sum=0;
   cart_arr.forEach((elem, index) => {
-    sum=sum+elem.price;
-  //  document.querySelector("#span_total").innerText=sum;
     let box = document.createElement("div");
     let image = document.createElement("img");
     image.setAttribute("src", elem.image);
     let head = document.createElement("h3");
     head.innerText = elem.head;
     let para = document.createElement("p");
-    para.innerText = elem.para;   
-    let price_word=document.createElement("span");
-    price_word.innerText="$"
+    para.innerText = elem.para;
+    let price_word = document.createElement("span");
+    price_word.innerText = "$";
     let price = document.createElement("p");
     price.innerText = elem.price;
-    price.append(price_word)
+    price.append(price_word);
     let btn = document.createElement("div");
     btn.innerText = "QUICK BUY";
     btn.addEventListener("click", () => {
@@ -366,7 +361,7 @@ function itemfunc(cart_arr) {
 
 function added_cart_func(elem, index) {
   added_cart.push(elem);
-  alert("Product added Successfully!")
+  alert("Product added Successfully!");
   localStorage.setItem("added_cart_data", JSON.stringify(added_cart));
   itemfunc(cart_arr);
 }

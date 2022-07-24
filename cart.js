@@ -333,6 +333,8 @@ function selectfucn(event) {
     itemfunc(cart_arr);
   }
 }
+
+let get_array=JSON.parse(localStorage.getItem("signup_data")) || [];
 itemfunc(cart_arr);
 function itemfunc(cart_arr) {
   document.querySelector("#items").innerHTML = "";
@@ -352,7 +354,12 @@ function itemfunc(cart_arr) {
     let btn = document.createElement("div");
     btn.innerText = "QUICK BUY";
     btn.addEventListener("click", () => {
-      added_cart_func(elem, index);
+      if(get_array.length==0){
+        alert("You have to login first before adding the items into the cart")
+      }else{
+        added_cart_func(elem, index);
+      }
+    
     });
     box.append(image, head, para, price, btn);
     document.querySelector("#items").append(box);

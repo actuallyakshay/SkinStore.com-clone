@@ -355,7 +355,8 @@ function itemfunc(cart_arr) {
     btn.innerText = "QUICK BUY";
     btn.addEventListener("click", () => {
       if(get_array.length==0){
-        alert("You have to login first before adding the items into the cart")
+        alert("You have to login first before adding the items into the cart");
+        window.location.href="signin.html"
       }else{
         added_cart_func(elem, index);
       }
